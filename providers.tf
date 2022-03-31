@@ -9,6 +9,6 @@ terraform {
 }
 
 provider "aws" {
-  shared_credentials_files = ["\\Users\\Arteen\\.aws\\credentials"]
-  shared_config_files      = ["C:\\Users\\Arteen\\.aws\\config"]
+  shared_credentials_files = ["%USERPROFILE%.aws\\credentials"]
+  shared_config_files      = ["%USERPROFILE%.aws\\config"]
 }
