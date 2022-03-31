@@ -111,10 +111,6 @@ resource "aws_eip" "tf-demo-one" {
   depends_on                = [aws_internet_gateway.tf-demo-gw]
 }
 
-output "server_public_ip" {
-  value = aws_eip.tf-demo-one.public_ip
-}
-
 # Ubuntu server
 
 resource "aws_instance" "tf-demo-web-server" {

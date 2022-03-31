@@ -1,13 +1,5 @@
 # Terraform variables
 
-variable "shared_credentials" {
-  type = string
-}
-
-variable "shared_config" {
-  type = string
-}
-
 variable "availability_zone" {
   type    = string
   default = "us-west-1a"
