@@ -9,6 +9,6 @@ terraform {
 }
 
 provider "aws" {
-  shared_credentials_files = ["%USERPROFILE%.aws\\credentials"]
-  shared_config_files      = ["%USERPROFILE%.aws\\config"]
+  shared_credentials_files = [var.shared_credentials]
+  shared_config_files      = [var.shared_config]
 }
